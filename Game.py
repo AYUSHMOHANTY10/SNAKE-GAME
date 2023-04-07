@@ -1,3 +1,4 @@
+#Importing libraries
 from turtle import *
 from random import randrange
 from freegames import square, vector
@@ -6,6 +7,7 @@ food = vector(0, 0)
 snake = [vector(100, 0)]
 aim = vector(0, -10)
 
+#Creating functions
 def change(x, y):
     "Change snake direction."
     aim.x = x
@@ -54,6 +56,7 @@ def move():
     update()
     ontimer(move, 100)
 
+#Code
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
